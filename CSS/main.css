@@ -1,0 +1,279 @@
+:root {
+    --white: #ffffff; 
+    --gray: #9a9a9a;
+    --darkgray: #818181; 
+    --green: #68de2c;
+}
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Open sans, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.header-1 {
+    width: 100%;
+    height: 500px;
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-principal {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    z-index: 1;
+}
+
+main {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding: 15px;
+    width: 14%;
+    position: relative;
+    top: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.redes-sociais ul li {
+    display: inline-block;   
+}
+
+.redes-sociais {
+    width: 30%;
+    float: right;
+    position: relative;
+    top: -34px;
+}
+
+.redes-sociais img {
+    max-width: 50%;
+}
+
+.menu {
+    width: 60%;
+    float: left;
+    position: relative;
+    top: 25px;
+    right: -34px;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: var(--white);
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.menu ul li:first-child {
+    margin-left: auto;
+}
+
+.menu ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: open Sans, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    
+    border-bottom: 2px solid var(--green);
+}
+
+.banner {
+    width: 100%;
+    height: 87vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    max-height: 90%;
+}
+
+.banner .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.banner .content h1 {
+    width: 180%;
+    font-size: 42px;
+    text-transform: uppercase;
+    position: relative;
+    top: -105px;
+    color: var(--green);
+}
+
+.banner .content p {
+    width: 150%;
+    font-size: 20px;
+    color: var(--white);
+    position: relative;
+    top: 25px;
+    left: -529px;
+}
+
+.content-2 {
+    text-align: center;
+}
+
+.content-2 h1 {
+    color: var(--darkgray);
+    position: relative;
+    top: 25px;
+}
+
+.content-2 p {
+    color: var(--gray);
+    position: relative;
+    top: 10px;
+}
+
+main.cards-1 {
+    display: flex;
+    padding: 32px;
+    height: 500px;
+}
+
+main.cards-1 section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 46px;
+    max-height: 400px;
+    max-width: 279px;
+    margin-left: 40px;
+    box-shadow: 20px 20px 50px -30px var(--green);
+
+}
+
+main.cards-1 section.card:first-child {
+    margin-left: 0px;
+}
+
+main.cards-1 section.card img {
+    width: 50%;
+    position: relative;
+}
+
+main.cards-1 section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards-1 section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+
+main.cards-1 section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 75%;
+    font-weight: 600;
+    background: linear-gradient(to right, #68de2c, #2a660c);
+}
+
+@media screen and (max-width: 945px) { 
+    main.cards-1 {
+        flex-direction: column;
+    }    
+
+    main.cards-1 section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards-1 section.card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer {
+    background-image: url(../img/background\ footer.png);
+    color: var(--white);
+    height: 360px;
+}
+
+.footer h3 {
+    text-align: left;
+    width: 20%;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 1%;
+    position: relative;
+    top: 36px;
+    right: 87px;
+}
+
+.footer-2 {
+    background-image: url(../img/footer2.png);
+    color: var(--white);
+    height: 90px;
+}
+
+.logo-footer img {
+    width: 50%;
+    padding: 2%;
+}
+
+.footer-2 h1 {
+    font-size: 12px;
+    position: relative;
+    top: 21px;
+}
+
+.footer-2 .redes-sociais {
+    position: relative;
+    top: -40px;
+    left: -143px;
+}
