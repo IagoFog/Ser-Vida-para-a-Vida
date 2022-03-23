@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/servid21/
+    - /bin/cp * $DEPLOYPATH
